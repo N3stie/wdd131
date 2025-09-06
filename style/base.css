@@ -1,0 +1,152 @@
+:root{
+    --primary-color : #2F5233;   /*Cal Poly Green*/
+    --secondary-color : #1D3557; /*Berkeley Blue*/
+    --accent1-color : #6EC1E4;   /*Sky Blue */
+    --accent2-color: #F3E9DC;    /*Linen*/
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+#course-title {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+main > h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(47, 82, 51, 0.08);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 0; /* Remove extra margin, grid gap is used */
+}
+
+nav a {
+    color: var(--accent1-color);
+    text-decoration: none;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #fff;
+    background: var(--accent1-color);
+    box-shadow: 0 2px 8px rgba(110, 193, 228, 0.2);
+    text-decoration: none;
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(47, 82, 51, 0.08);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.card img {
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid var(--accent1-color);
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-family: var(--body-font);
+}

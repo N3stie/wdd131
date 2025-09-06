@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamental - Ernest M. Bonifacio</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ernest M. Bonifacio. Learn HTML, CSS, JavaScript, responsive design, web development basics, and dynamic web techniques.">
+
+            <!-- This is the CSS link -->
+    <link rel="stylesheet" href="style/base.css">
+
+            <!-- This is the Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+    <header>
+        <h1>
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/ernest-bonifacio-435b95312/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/2?lang=eng" target="_blank">Favorite Scripture</a></li>
+                <li><a href="#" target="_blank">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ernest M. Bonifacio</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="image/Nest.jpeg" alt="Ernest M. Bonifacio profile photo" width="200" height="200">
+            <p>Hello! I'm Ernest M. Bonifacio, a web development enthusiast currently enrolled in WDD 131. I enjoy learning new technologies and building dynamic web applications.</p>
+        </section>
+        <section class="card">
+            <h2>Favorite Place</h2>
+            <img src="image/palawan_philippines.jpg" alt="Favorite place scenery" width="200" height="200">
+            <p>One of my favorite places is the beach, where I find peace and inspiration. The sound of the waves and the beauty of nature help me relax and recharge.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Ernest M. Bonifacio, Philippines.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+    </script>
+
+</body>
+</html>
