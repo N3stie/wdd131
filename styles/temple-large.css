@@ -2,15 +2,20 @@
 @media screen and (min-width: 768px) {
 
   /* NAVIGATION FLEX */
+   #menu {
+    display: none; /* hide hamburger on desktop */
+  }
+
+  nav {
+    display: block; /* always visible on large screens */
+  }
+
   nav ul {
-    flex-direction: row;   /* horizontaling menu */
+    flex-direction: row;
     justify-content: center;
+    gap: 2rem;
   }
-
-  nav li {
-    margin: 0 1rem;
-  }
-
+}
   /* GRID GALLERY */
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -20,4 +25,4 @@
   figure img {
     border-radius: 15px;
   }
-}
+
