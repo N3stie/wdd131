@@ -1,0 +1,23 @@
+/* temples-large.css - Larger Screens */
+@media screen and (min-width: 768px) {
+
+  /* NAVIGATION FLEX */
+  nav ul {
+    flex-direction: row;   /* horizontaling menu */
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  /* GRID GALLERY */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  figure img {
+    border-radius: 15px;
+  }
+}
