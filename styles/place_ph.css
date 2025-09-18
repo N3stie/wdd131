@@ -1,42 +1,61 @@
-/* General Reset for Mobile */
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
+/* Phone-specific styles */
+@media only screen and (max-width: 768px) {
 
-/* Header */
-header {
-  flex-direction: column;
-  text-align: center;
-  padding: 0.5rem;
-}
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: #fff; /* Set background to white */
+  }
 
-header h1 {
-  font-size: 1.5rem;
-}
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0.5rem; /* Add horizontal padding */
+    width: 100vw;
+    box-sizing: border-box;
+    background: #fff; /* Ensure container is white */
+  }
 
-/* Hero Section */
-.hero {
-  height: 50vh;
-}
+  .data-card,
+  .weather-card {
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+    box-sizing: border-box;
+    position: relative !important;
+    display: block;
+    float: none;
+    clear: both;
+    max-width: none; /* Remove max-width for full width */
+  }
 
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  .data-card {
+    margin-bottom: 1rem;
+  }
 
-/* Floating Cards → stack vertically */
-.data-card,
-.weather-card {
-  position: static; /* no absolute */
-  width: 90%;
-  margin: 1rem auto;
-}
+  @media (max-width: 600px) {
+    .cards-container {
+      padding: 0 0.2rem;
+    }
+    .data-card,
+    .weather-card {
+      padding: 1.2rem 0.2rem;
+    }
+  }
 
-/* Footer */
-footer {
-  font-size: 0.8rem;
-  padding: 0.8rem;
+  footer {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+    margin-top: 0;
+    background: #c8102e;
+    color: #fff;
+  }
 }
