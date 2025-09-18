@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>WDD 131 - Country Page - Ernest Bonifacio</title>
-    <meta name="description" content="WDD 131 - Country Page by Ernest M. Bonifacio. This is a webpage about the Philippines.">
+    <title>WDD 131 - Philippines Page - Ernest Bonifacio</title>
+    <meta name="description" content="WDD 131 - Country Page by Ernest Bonifacio. This is a webpage about the Philippines.">
     <meta name="author" content="Ernest M. Bonifacio">
 
     <!-- link for css -->
@@ -16,16 +16,19 @@
      <script src="scripts/place.js" defer></script>
 </head>
 <body>
-
     <!-- header -->
     <header>
         <h1>Philippines</h1>
     </header>
-    
     <!-- main content  -->
-     <section class="hero">
-        <img src="image/phi.png" alt="Beautiful view of the Philippines">
-     </section>
+    <main>
+    <section class="hero">
+            <img 
+                src="image/phi.png" 
+                srcset="image/phi-small.png 600w, image/phi.png 1200w"
+                sizes="(max-width: 600px) 100vw, 1200px"
+                alt="Beautiful view of the Philippines">
+    </section>
 
      <!-- floating Cards -->
       <div class="cards-container">
@@ -50,6 +53,7 @@
       </dl>
         </div>
       </div>
+      </main> 
 
       <!-- footer -->
        <footer>
