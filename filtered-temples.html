@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A collection of beautiful temple images">
+    <meta name="keywords" content="temples, photography, album">
+    <meta name="author" content="Ernest Bonifacio">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles/filtered-temple-desktop.css">
+    <link rel="stylesheet" href="styles/filtered-temple-phone.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <!-- JavaScript link -->
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header class="heaven-header">
+        <div class="header-bg">
+            <h1>Temple Album</h1>
+
+        </div>
+        <button id="menu" aria-label="Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="home">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <center>
+        <h2 class="temple-subtitle">Gallery</h2>
+        </center>
+        <section class="gallery">
+            <!-- Temples are in JS Nest -->
+        </section>
+    </main>
+
+    <footer class="heaven-footer">
+        <div class="footer-bg">
+            <p>&copy;2024 Ernest Bonifacio | Inspired by Heaven</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
