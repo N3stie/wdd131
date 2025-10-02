@@ -99,3 +99,9 @@ document.addEventListener('DOMContentLoaded', () => {
       .replaceAll('\n', '<br>');
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const lastMod = document.getElementById('lastModified');
+  if (lastMod) {
+    lastMod.textContent = "Last Modification: " + document.lastModified;
+  }
+});
