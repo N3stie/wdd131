@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Review — Form</title>
+
+  <!-- link for css -->
+  <link rel="stylesheet" href="styles/form.css">
+
+  <!-- link for js -->
+   <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" class="form-card" method="get" action="review.html" novalidate>
+      <!-- Product -->
+      <div class="form-group">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Choose a Product ...</option>
+          <!-- putting option for population js -->
+        </select>
+      </div>
+
+      <!-- Rating for the form -->
+      <fieldset class="form-group fieldset-inline" aria-labelledby="ratingLegend">
+        <legend id="ratingLegend">Overall Rating</legend>
+        <div class="rating-row">
+          <label>
+            <input type="radio" id="rating-1" name="rating" value="1" required>
+            <span class="star">★</span> 1
+          </label>
+          <label>
+            <input type="radio" id="rating-2" name="rating" value="2" required>
+            <span class="star">★★</span> 2
+          </label>
+          <label>
+            <input type="radio" id="rating-3" name="rating" value="3" required>
+            <span class="star">★ ★ ★</span> 3
+          </label>
+          <label>
+            <input type="radio" id="rating-4" name="rating" value="4" required>
+            <span class="star">★ ★ ★ ★</span> 4
+          </label>
+          <label>
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+            <span class="star">★ ★ ★ ★ ★</span> 5
+          </label>
+        </div>
+      </fieldset>
+
+      <!-- Date -->
+      <div class="form-group">
+        <label for="installationDate">Date of Installation</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      </div>
+
+      <!-- Checkboxes -->
+      <fieldset class="form-group">
+        <legend>Which features did you find useful in the product? <span class="muted">(Check all that apply)</span></legend>
+        <div class="checkboxes">
+          <label for="f-durability"><input type="checkbox" id="f-durability" name="features" value="Durability"> Durability</label>
+          <label for="f-ease"><input type="checkbox" id="f-ease" name="features" value="Ease of Use"> Ease of Use</label>
+          <label for="f-performance"><input type="checkbox" id="f-performance" name="features" value="Performance"> Performance</label>
+          <label for="f-design"><input type="checkbox" id="f-design" name="features" value="Design"> Design</label>
+        </div>
+      </fieldset>
+
+      <!-- Written review -->
+      <div class="form-group">
+        <label for="review">Written Review <span class="muted">(Optional)</span></label>
+        <textarea id="review" name="review" rows="6" placeholder="Tell us about your experience..."></textarea>
+      </div>
+
+      <!-- Name -->
+      <div class="form-group">
+        <label for="username">Your Name <span class="muted">(Optional)</span></label>
+        <input type="text" id="username" name="username" placeholder="Your name">
+      </div>
+
+      <!-- Submit -->
+      <div class="form-group">
+        <input class="submit-btn" type="submit" value="Post Review">
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>©2024 — Product Review Demo</p>
+  </footer>
+
+</body>
+</html>
