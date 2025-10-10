@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Equipment - Volt Ampere Electrical Solutions</title>
+    <meta name="description" content="Volt Ampere Electrical Solutions offers professional electrical services and equipment rentals including insulation testing, load balancing, and electrical design analysis.">
+    <meta name="keywords" content="electrical services, insulation testing, load balancing, electrical design analysis, equipment rentals">
+    <meta name="author" content="Ernest Bonifacio">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="image/volt/logo.png">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="styles/rent.css">
+
+    <!-- JavaScript link -->
+    <script src="scripts/rent.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="form-header">
+            <h1>Rent <span class="highlight">Equipment</span></h1>
+            <p>Fill out the form below to rent electrical equipment</p>
+            <a href="volt-ampere-electrical-solutions.html" class="back-btn">← Back to Home</a>
+        </header>
+
+        <form class="rent-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Rental Start Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="equipment-type">Equipment Type</label>
+                <select id="equipment-type" name="equipment-type" required>
+                    <option value="">Select equipment</option>
+                    <option value="multimeter">Digital Multimeter</option>
+                    <option value="insulation-tester">Insulation Resistance Tester</option>
+                    <option value="power-analyzer">Power Quality Analyzer</option>
+                    <option value="cable-tester">Cable and Fault Locator</option>
+                    <option value="other">Other Equipment</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">Rental Duration</label>
+                <select id="duration" name="duration" required>
+                    <option value="">Select duration</option>
+                    <option value="1-day">1 Day</option>
+                    <option value="3-days">3 Days</option>
+                    <option value="1-week">1 Week</option>
+                    <option value="2-weeks">2 Weeks</option>
+                    <option value="1-month">1 Month</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Additional Requirements (Optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Rental Request</button>
+        </form>
+    </div>
+
+</body>
+</html>
