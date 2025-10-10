@@ -1,0 +1,256 @@
+:root {
+  /* Primary brand colors */
+  --color-dark: #0c0e10;
+  --color-accent: #fdd835;
+  --color-light-bg: #f7f7f7;
+  --color-text: #1a1a1a;
+  --color-muted: #444;
+
+  /* Fonts */
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #0c0e10;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 90px;
+  width: 120px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fdd835;
+}
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+}
+
+/* Desktop Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 8%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #101214 55%, #f5f5f5 45%);
+}
+
+.hero-content {
+  flex: 1;
+  color: #ffffff;
+  padding-right: 2rem;
+}
+
+.hero-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content .highlight {
+  color: #fdd835;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+#bookNowBtn {
+  padding: 0.9rem 2rem;
+  font-size: 1rem;
+  background-color: #fdd835;
+  border: none;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#bookNowBtn:hover {
+  background-color: #ffe864;
+}
+
+.hero-image {
+  flex: 1;
+  background: url("images/hero-placeholder.jpg") center/cover no-repeat;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  padding: 5rem 8%;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ===== SERVICES ===== */
+.services {
+  padding: 5rem 8%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #0c0e10;
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #0c0e10;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fdd835;
+  color: #000;
+}
+
+/* ===== FEEDBACK ===== */
+.feedback {
+  padding: 5rem 8%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.feedback h2 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.feedback-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #0c0e10;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+

@@ -1,0 +1,174 @@
+/* ===== MOBILE STYLES ===== */
+@media (max-width: 768px) {
+  /* Navbar hidden by default */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0c0e10;
+    position: absolute;
+    top: 70px; /* adjust based on header height */
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+  }
+
+  /* Navbar active (opened) */
+  .navbar.active {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    width: 100%;
+    padding: 0.8rem 0;
+    display: block;
+    transition: background 0.3s ease;
+  }
+
+  .navbar a:hover {
+    background: #222;
+  }
+
+  /* Hamburger button visible on mobile */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1000;
+  }
+
+  /* Adjust logo size and alignment */
+  .logo img {
+    height: 45px;
+  }
+
+  /* ===== HERO SECTION ===== */
+  .hero {
+    flex-direction: column-reverse;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-dark) 60%, #f5f5f5 40%);
+  }
+
+  .hero-content {
+    color: #fff;
+    padding-right: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  #bookNowBtn {
+    width: 70%;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+
+  /* ===== ABOUT ===== */
+  .about {
+    padding: 3rem 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  /* ===== SERVICES ===== */
+  .services {
+    padding: 3rem 1.5rem;
+  }
+
+  .services h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* ===== FEEDBACK ===== */
+  .feedback {
+    padding: 3rem 1.5rem;
+  }
+
+  .feedback-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media (min-width: 769px) {
+  #menuToggle {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    max-height: none;
+    opacity: 1;
+    background: none;
+  }
+
+  .navbar a:hover {
+    background: none;
+    color: #fdd835;
+  }
+}
