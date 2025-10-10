@@ -10,18 +10,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ===== SMOOTH SCROLL =====
+  // ===== SMOOTH SCROLL - FIXED VERSION =====
   document.querySelectorAll(".navbar a, #bookNowBtn").forEach((link) => {
     link.addEventListener("click", (e) => {
       const targetID = link.getAttribute("href");
+      
+      // Only handle internal links (starting with #)
       if (targetID && targetID.startsWith("#")) {
         e.preventDefault();
         const target = document.querySelector(targetID);
+        
         if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
+          // Get header height for offset calculation
+          const headerHeight = document.querySelector('.main-header').offsetHeight;
+          // Get target element position
+          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          // Calculate final position with header offset
+          const offsetPosition = targetPosition - headerHeight - 20; // 20px extra padding
+          
+          // Smooth scroll to calculated position
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
         }
+        
         // Close navbar after clicking a link (mobile)
-        navbar.classList.remove("active");
+        if (navbar) {
+          navbar.classList.remove("active");
+        }
       }
     });
   });
